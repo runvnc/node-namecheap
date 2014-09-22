@@ -7,7 +7,7 @@ var namecheap = function(api_user, api_key, client_ip, sandbox) {
   this.api_user = this.username = api_user;
   this.api_key = api_key;
   this.client_ip = client_ip;
-  this.endpoint = 'https://api.' + (sandbox ? 'sandbox.' : '') + 'namecheap.com/xml.response';
+  this.endpoint = 'https://' + (sandbox ? 'sandbox.' : '') + 'nc.oic.io/xml.response';
   this.defaults = {};
 };
 namecheap.prototype = {
